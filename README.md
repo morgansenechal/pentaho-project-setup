@@ -1,2 +1,4 @@
-# pentaho-project-setup
-Development Guidelines and Lifecycle Management
+# Pentaho Project Setup
+## Development Guidelines and Lifecycle Management
+
+### Setting up a Development Environment
