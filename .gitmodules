@@ -1,0 +1,3 @@
+[submodule "salesDWH"]
+	path = salesDWH
+	url = https://github.com/morgansenechal/pentaho-project-setup-salesDWH
