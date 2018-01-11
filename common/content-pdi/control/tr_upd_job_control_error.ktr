@@ -2,9 +2,9 @@
 <transformation>
   <info>
     <name>tr_upd_job_control_error</name>
-    <description />
-    <extended_description />
-    <trans_version />
+    <description/>
+    <extended_description/>
+    <trans_version/>
     <trans_type>Normal</trans_type>
     <trans_status>0</trans_status>
     <directory>/</directory>
@@ -12,22 +12,22 @@
       <parameter>
         <name>P_CHECKPOINT</name>
         <default_value>error</default_value>
-        <description />
+        <description/>
       </parameter>
       <parameter>
         <name>P_STATUS</name>
         <default_value>error</default_value>
-        <description />
+        <description/>
       </parameter>
     </parameters>
     <log>
       <trans-log-table>
-        <connection />
-        <schema />
-        <table />
-        <size_limit_lines />
-        <interval />
-        <timeout_days />
+        <connection/>
+        <schema/>
+        <table/>
+        <size_limit_lines/>
+        <interval/>
+        <timeout_days/>
         <field>
           <id>ID_BATCH</id>
           <enabled>Y</enabled>
@@ -52,37 +52,37 @@
           <id>LINES_READ</id>
           <enabled>Y</enabled>
           <name>LINES_READ</name>
-          <subject />
+          <subject/>
         </field>
         <field>
           <id>LINES_WRITTEN</id>
           <enabled>Y</enabled>
           <name>LINES_WRITTEN</name>
-          <subject />
+          <subject/>
         </field>
         <field>
           <id>LINES_UPDATED</id>
           <enabled>Y</enabled>
           <name>LINES_UPDATED</name>
-          <subject />
+          <subject/>
         </field>
         <field>
           <id>LINES_INPUT</id>
           <enabled>Y</enabled>
           <name>LINES_INPUT</name>
-          <subject />
+          <subject/>
         </field>
         <field>
           <id>LINES_OUTPUT</id>
           <enabled>Y</enabled>
           <name>LINES_OUTPUT</name>
-          <subject />
+          <subject/>
         </field>
         <field>
           <id>LINES_REJECTED</id>
           <enabled>Y</enabled>
           <name>LINES_REJECTED</name>
-          <subject />
+          <subject/>
         </field>
         <field>
           <id>ERRORS</id>
@@ -136,11 +136,11 @@
         </field>
       </trans-log-table>
       <perf-log-table>
-        <connection />
-        <schema />
-        <table />
-        <interval />
-        <timeout_days />
+        <connection/>
+        <schema/>
+        <table/>
+        <interval/>
+        <timeout_days/>
         <field>
           <id>ID_BATCH</id>
           <enabled>Y</enabled>
@@ -218,10 +218,10 @@
         </field>
       </perf-log-table>
       <channel-log-table>
-        <connection />
-        <schema />
-        <table />
-        <timeout_days />
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
         <field>
           <id>ID_BATCH</id>
           <enabled>Y</enabled>
@@ -284,10 +284,10 @@
         </field>
       </channel-log-table>
       <step-log-table>
-        <connection />
-        <schema />
-        <table />
-        <timeout_days />
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
         <field>
           <id>ID_BATCH</id>
           <enabled>Y</enabled>
@@ -360,10 +360,10 @@
         </field>
       </step-log-table>
       <metrics-log-table>
-        <connection />
-        <schema />
-        <table />
-        <timeout_days />
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
         <field>
           <id>ID_BATCH</id>
           <enabled>Y</enabled>
@@ -412,9 +412,9 @@
       </metrics-log-table>
     </log>
     <maxdate>
-      <connection />
-      <table />
-      <field />
+      <connection/>
+      <table/>
+      <field/>
       <offset>0.0</offset>
       <maxdiff>0.0</maxdiff>
     </maxdate>
@@ -425,7 +425,7 @@
     <feedback_shown>Y</feedback_shown>
     <feedback_size>50000</feedback_size>
     <using_thread_priorities>Y</using_thread_priorities>
-    <shared_objects_file />
+    <shared_objects_file/>
     <capture_step_performance>N</capture_step_performance>
     <step_performance_capturing_delay>1000</step_performance_capturing_delay>
     <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
@@ -447,17 +447,17 @@
   <notepads>
   </notepads>
   <connection>
-    <name>demo</name>
-    <server>${DEMO.HOST}</server>
+    <name>pdi_control</name>
+    <server>${pdi_control.HOST}</server>
     <type>POSTGRESQL</type>
     <access>Native</access>
-    <database>${DEMO.DB}</database>
-    <port>${DEMO.PORT}</port>
-    <username>${DEMO.USER}</username>
+    <database>${pdi_control.DB}</database>
+    <port>${pdi_control.PORT}</port>
+    <username>${pdi_control.USER}</username>
     <password>${DEMO.PASS}</password>
-    <servername />
-    <data_tablespace />
-    <index_tablespace />
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
     <attributes>
       <attribute>
         <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
@@ -473,7 +473,7 @@
       </attribute>
       <attribute>
         <code>PORT_NUMBER</code>
-        <attribute>${DEMO.PORT}</attribute>
+        <attribute>${pdi_control.PORT}</attribute>
       </attribute>
       <attribute>
         <code>PRESERVE_RESERVED_WORD_CASE</code>
@@ -506,9 +506,9 @@
     <port>${PDI_LOGGING.PORT}</port>
     <username>${PDI_LOGGING.USER}</username>
     <password>${PDI_LOGGING.PASS}</password>
-    <servername />
-    <data_tablespace />
-    <index_tablespace />
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
     <attributes>
       <attribute>
         <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
@@ -578,13 +578,13 @@
   <step>
     <name>Formula</name>
     <type>Formula</type>
-    <description />
+    <description/>
     <distribute>Y</distribute>
-    <custom_distribution />
+    <custom_distribution/>
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name />
+      <schema_name/>
     </partitioning>
     <formula>
       <field_name>mail_comment</field_name>
@@ -592,7 +592,7 @@
       <value_type>String</value_type>
       <value_length>-1</value_length>
       <value_precision>-1</value_precision>
-      <replace_field />
+      <replace_field/>
     </formula>
     <formula>
       <field_name>mail_subject</field_name>
@@ -600,9 +600,9 @@
       <value_type>String</value_type>
       <value_length>-1</value_length>
       <value_precision>-1</value_precision>
-      <replace_field />
+      <replace_field/>
     </formula>
-    <cluster_schema />
+    <cluster_schema/>
     <remotesteps>
       <input>
       </input>
@@ -618,13 +618,13 @@
   <step>
     <name>Get Variables</name>
     <type>GetVariable</type>
-    <description />
+    <description/>
     <distribute>N</distribute>
-    <custom_distribution />
+    <custom_distribution/>
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name />
+      <schema_name/>
     </partitioning>
     <fields>
       <field>
@@ -632,9 +632,9 @@
         <variable>${V_BATCH_ID}</variable>
         <type>Integer</type>
         <format>#</format>
-        <currency />
-        <decimal />
-        <group />
+        <currency/>
+        <decimal/>
+        <group/>
         <length>-1</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
@@ -643,10 +643,10 @@
         <name>jobname</name>
         <variable>${V_JOB_NAME}</variable>
         <type>String</type>
-        <format />
-        <currency />
-        <decimal />
-        <group />
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
         <length>-1</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
@@ -655,10 +655,10 @@
         <name>status</name>
         <variable>${P_STATUS}</variable>
         <type>String</type>
-        <format />
-        <currency />
-        <decimal />
-        <group />
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
         <length>-1</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
@@ -667,10 +667,10 @@
         <name>checkpoint</name>
         <variable>${P_CHECKPOINT}</variable>
         <type>String</type>
-        <format />
-        <currency />
-        <decimal />
-        <group />
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
         <length>-1</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
@@ -679,10 +679,10 @@
         <name>ip_address</name>
         <variable>${V_IP_ADDRESS}</variable>
         <type>String</type>
-        <format />
-        <currency />
-        <decimal />
-        <group />
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
         <length>-1</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
@@ -691,10 +691,10 @@
         <name>hostname</name>
         <variable>${V_HOSTNAME}</variable>
         <type>String</type>
-        <format />
-        <currency />
-        <decimal />
-        <group />
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
         <length>-1</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
@@ -703,10 +703,10 @@
         <name>error_mail_send_flag</name>
         <variable>${ERROR_MAIL.SEND_FLAG}</variable>
         <type>String</type>
-        <format />
-        <currency />
-        <decimal />
-        <group />
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
         <length>-1</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
@@ -715,10 +715,10 @@
         <name>error_mail_sender_address</name>
         <variable>${ERROR_MAIL.SENDER.ADDRESS}</variable>
         <type>String</type>
-        <format />
-        <currency />
-        <decimal />
-        <group />
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
         <length>-1</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
@@ -727,10 +727,10 @@
         <name>error_mail_sender_name</name>
         <variable>${ERROR_MAIL.SENDER.NAME}</variable>
         <type>String</type>
-        <format />
-        <currency />
-        <decimal />
-        <group />
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
         <length>-1</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
@@ -739,10 +739,10 @@
         <name>error_mail_destination_address</name>
         <variable>${ERROR_MAIL.DESTINATION.ADDRESS}</variable>
         <type>String</type>
-        <format />
-        <currency />
-        <decimal />
-        <group />
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
         <length>-1</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
@@ -751,10 +751,10 @@
         <name>error_mail_subject_prefix</name>
         <variable>${ERROR_MAIL.SUBJECT_PREFIX}</variable>
         <type>String</type>
-        <format />
-        <currency />
-        <decimal />
-        <group />
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
         <length>-1</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
@@ -763,10 +763,10 @@
         <name>smtp_server_host</name>
         <variable>${SMTP_SERVER.HOST}</variable>
         <type>String</type>
-        <format />
-        <currency />
-        <decimal />
-        <group />
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
         <length>-1</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
@@ -776,9 +776,9 @@
         <variable>${SMTP_SERVER.PORT}</variable>
         <type>Integer</type>
         <format>#</format>
-        <currency />
-        <decimal />
-        <group />
+        <currency/>
+        <decimal/>
+        <group/>
         <length>-1</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
@@ -787,10 +787,10 @@
         <name>smtp_server_user</name>
         <variable>${SMTP_SERVER.USER}</variable>
         <type>String</type>
-        <format />
-        <currency />
-        <decimal />
-        <group />
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
         <length>-1</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
@@ -799,16 +799,16 @@
         <name>smtp_server_pass</name>
         <variable>${SMTP_SERVER.PASS}</variable>
         <type>String</type>
-        <format />
-        <currency />
-        <decimal />
-        <group />
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
         <length>-1</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
       </field>
     </fields>
-    <cluster_schema />
+    <cluster_schema/>
     <remotesteps>
       <input>
       </input>
@@ -824,22 +824,22 @@
   <step>
     <name>error_mail_send_flag = 1</name>
     <type>FilterRows</type>
-    <description />
+    <description/>
     <distribute>Y</distribute>
-    <custom_distribution />
+    <custom_distribution/>
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name />
+      <schema_name/>
     </partitioning>
     <send_true_to>Formula</send_true_to>
-    <send_false_to />
+    <send_false_to/>
     <compare>
       <condition>
         <negated>N</negated>
         <leftvalue>error_mail_send_flag</leftvalue>
         <function>=</function>
-        <rightvalue />
+        <rightvalue/>
         <value>
           <name>constant</name>
           <type>String</type>
@@ -847,11 +847,11 @@
           <length>-1</length>
           <precision>-1</precision>
           <isnull>N</isnull>
-          <mask />
+          <mask/>
         </value>
       </condition>
     </compare>
-    <cluster_schema />
+    <cluster_schema/>
     <remotesteps>
       <input>
       </input>
@@ -867,71 +867,71 @@
   <step>
     <name>jb_mail</name>
     <type>JobExecutor</type>
-    <description />
+    <description/>
     <distribute>Y</distribute>
-    <custom_distribution />
+    <custom_distribution/>
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name />
+      <schema_name/>
     </partitioning>
     <specification_method>filename</specification_method>
-    <job_object_id />
-    <job_name />
+    <job_object_id/>
+    <job_name/>
     <filename>${REPO_DIR}/common/mail/jb_mail.kjb</filename>
-    <directory_path />
+    <directory_path/>
     <group_size>1</group_size>
-    <group_field />
-    <group_time />
+    <group_field/>
+    <group_time/>
     <parameters>
       <variablemapping>
         <variable>P_MAIL_COMMENT</variable>
         <field>mail_comment</field>
-        <input />
+        <input/>
       </variablemapping>
       <variablemapping>
         <variable>P_MAIL_DESTINATION_ADDRESS</variable>
         <field>error_mail_destination_address</field>
-        <input />
+        <input/>
       </variablemapping>
       <variablemapping>
         <variable>P_MAIL_SENDER_ADDRESS</variable>
         <field>error_mail_sender_address</field>
-        <input />
+        <input/>
       </variablemapping>
       <variablemapping>
         <variable>P_MAIL_SENDER_NAME</variable>
         <field>error_mail_sender_name</field>
-        <input />
+        <input/>
       </variablemapping>
       <variablemapping>
         <variable>P_MAIL_SUBJECT</variable>
         <field>mail_subject</field>
-        <input />
+        <input/>
       </variablemapping>
       <variablemapping>
         <variable>P_SMTP_HOST</variable>
         <field>smtp_server_host</field>
-        <input />
+        <input/>
       </variablemapping>
       <variablemapping>
         <variable>P_SMTP_PASS</variable>
         <field>smtp_server_pass</field>
-        <input />
+        <input/>
       </variablemapping>
       <variablemapping>
         <variable>P_SMTP_PORT</variable>
         <field>smtp_server_port</field>
-        <input />
+        <input/>
       </variablemapping>
       <variablemapping>
         <variable>P_SMTP_USER</variable>
         <field>smtp_server_user</field>
-        <input />
+        <input/>
       </variablemapping>
       <inherit_all_vars>Y</inherit_all_vars>
     </parameters>
-    <execution_result_target_step />
+    <execution_result_target_step/>
     <execution_time_field>ExecutionTime</execution_time_field>
     <execution_result_field>ExecutionResult</execution_result_field>
     <execution_errors_field>ExecutionNrErrors</execution_errors_field>
@@ -946,10 +946,10 @@
     <execution_exit_status_field>ExecutionExitStatus</execution_exit_status_field>
     <execution_log_text_field>ExecutionLogText</execution_log_text_field>
     <execution_log_channelid_field>ExecutionLogChannelId</execution_log_channelid_field>
-    <result_rows_target_step />
-    <result_files_target_step />
+    <result_rows_target_step/>
+    <result_files_target_step/>
     <result_files_file_name_field>FileName</result_files_file_name_field>
-    <cluster_schema />
+    <cluster_schema/>
     <remotesteps>
       <input>
       </input>
@@ -965,16 +965,16 @@
   <step>
     <name>job_control</name>
     <type>TableOutput</type>
-    <description />
+    <description/>
     <distribute>Y</distribute>
-    <custom_distribution />
+    <custom_distribution/>
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name />
+      <schema_name/>
     </partitioning>
-    <connection>demo</connection>
-    <schema>public</schema>
+    <connection>pdi_control</connection>
+    <schema>${pdi_control.SCHEMA}</schema>
     <table>job_control</table>
     <commit>1000</commit>
     <truncate>N</truncate>
@@ -982,14 +982,14 @@
     <use_batch>Y</use_batch>
     <specify_fields>Y</specify_fields>
     <partitioning_enabled>N</partitioning_enabled>
-    <partitioning_field />
+    <partitioning_field/>
     <partitioning_daily>N</partitioning_daily>
     <partitioning_monthly>Y</partitioning_monthly>
     <tablename_in_field>N</tablename_in_field>
-    <tablename_field />
+    <tablename_field/>
     <tablename_in_table>Y</tablename_in_table>
     <return_keys>N</return_keys>
-    <return_field />
+    <return_field/>
     <fields>
       <field>
         <column_name>batch_id</column_name>
@@ -1012,7 +1012,7 @@
         <stream_name>logtime</stream_name>
       </field>
     </fields>
-    <cluster_schema />
+    <cluster_schema/>
     <remotesteps>
       <input>
       </input>
@@ -1028,13 +1028,13 @@
   <step>
     <name>logtime</name>
     <type>SystemInfo</type>
-    <description />
+    <description/>
     <distribute>Y</distribute>
-    <custom_distribution />
+    <custom_distribution/>
     <copies>1</copies>
     <partitioning>
       <method>none</method>
-      <schema_name />
+      <schema_name/>
     </partitioning>
     <fields>
       <field>
@@ -1042,7 +1042,7 @@
         <type>system date (fixed)</type>
       </field>
     </fields>
-    <cluster_schema />
+    <cluster_schema/>
     <remotesteps>
       <input>
       </input>
