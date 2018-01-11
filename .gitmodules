@@ -1,3 +1,6 @@
 [submodule "salesDWH"]
 	path = salesDWH
 	url = https://github.com/morgansenechal/pentaho-project-setup-salesDWH
+[submodule "taxExport"]
+	path = taxExport
+	url = https://github.com/morgansenechal/pentaho-project-setup-taxExport
