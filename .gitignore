@@ -1,3 +1,4 @@
 **/log/**
 **/file_mgmt/**/output
-configuration/**
+configuration/**/.kettle/kettle.properties
+configuration/**/spoon.bat
